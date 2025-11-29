@@ -1,0 +1,41 @@
+If you read no other section in this chapter, read this one: I find the tools discussed he
+re to be the most transformative contributions of IPython to my daily workflow.
+
+When a technologically-minded person is asked to help a friend, family memb
+er, or colleague with a computer problem, most of the time it's less a matter o
+f knowing the answer as much as knowing how to quickly find an unknown answer. In 
+data science it's the same: searchable web resources such as online documentation, ma
+iling-list threads, and StackOverflow answers contain a wealth of information, even (especially
+?) if it is a topic you've found yourself searching before. Being an effective practitioner of dat
+a science is less about memorizing the tool or command you should use for every possible situation, a
+nd more about learning to effectively find the information you don't know, whether through a web search
+ engine or another means.
+
+One of the most useful functions of IPython/Jupyter is to shorten the gap between the user and t
+he type of documentation and search that will help them do their work effectively. While web s
+earches still play a role in answering complicated questions, an amazing amount of informatio
+n can be found through IPython alone. Some examples of the questions IPython can help answer 
+in a few keystrokes:
+
+How do I call this function? What arguments and options does it have?
+What does the source code of this Python object look like?
+What is in this package I imported? What attributes or methods does this object 
+have?
+Here we'll discuss IPython's tools to quickly access this information, namely t
+he ? character to explore documentation, the ?? characters to explore
+ source code, and the Tab key for auto-completion.
+
+ #include <fcntl.h>
+#include <stdio.h>
+
+int main()
+{
+    int fd = open("ok.txt", O_RDONLY);
+    char *str = get_next_line(fd);
+   while (str != NULL)
+   	{
+		printf("%s", str);
+		str = get_next_line(fd);
+	}
+    return (0);
+}123

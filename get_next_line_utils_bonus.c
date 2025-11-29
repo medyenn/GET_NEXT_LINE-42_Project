@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*    get_next_line_utils_bonus.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/29 20:00:55 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/29 22:56:53 by mennih           ###   ########.fr       */
+/*   Created: 2025/11/29 22:31:57 by mennih            #+#    #+#             */
+/*   Updated: 2025/11/29 22:32:20 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_free(char *buf1, char *buf2)
 {

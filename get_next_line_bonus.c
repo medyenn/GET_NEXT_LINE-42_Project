@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/29 08:42:46 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/29 22:49:43 by mennih           ###   ########.fr       */
+/*   Created: 2025/11/29 22:29:28 by mennih            #+#    #+#             */
+/*   Updated: 2025/11/29 22:43:23 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	check_line(char *line)
 {
@@ -89,15 +89,14 @@ char	*form_line(int fd, char *line)
 
 char	*get_next_line(int fd)
 {
-	static char	*line;
+	static char *line[1024];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	if (check_line(line) == 0)
-		return (extract_line(&line));
-	line = form_line(fd, line);
-	if (!line)
+	if (check_line(line[fd]) == 0)
+		return (extract_line(&(line[fd])));
+	line[fd] = form_line(fd, line[fd]);
+	if (!(line[fd]))
 		return (NULL);
-	return (extract_line(&line));
+	return (extract_line(&(line[fd])));
 }
-

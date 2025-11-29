@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/25 19:09:53 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/29 22:49:25 by mennih           ###   ########.fr       */
+/*   Created: 2025/11/29 22:30:57 by mennih            #+#    #+#             */
+/*   Updated: 2025/11/29 22:50:46 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -29,6 +29,5 @@ int		check_line(char *buff);
 char	*join_line(char *line, char *buffer);
 char	*update_line(char *line, int j);
 char	*duplicate_line(char *buff);
-
 
 #endif
