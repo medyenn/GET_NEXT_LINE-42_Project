@@ -6,7 +6,7 @@
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 22:29:28 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/29 22:43:23 by mennih           ###   ########.fr       */
+/*   Updated: 2025/11/30 10:50:22 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,21 @@ int	check_line(char *line)
 	return (1);
 }
 
+void	fill_line(char *temp, char *line, int *i, int j)
+{
+	while ((*i) < j)
+	{
+		temp[(*i)] = line[(*i)];
+		(*i)++;
+	}
+}
+
 char	*extract_line(char **line_ptr)
 {
 	char	*temp;
 	char	*line;
-	int		i;
 	int		j;
+	int		i;
 	int		n;
 
 	line = *line_ptr;
@@ -49,11 +58,7 @@ char	*extract_line(char **line_ptr)
 	if (!temp)
 		return (NULL);
 	j = 0;
-	while (j < i)
-	{
-		temp[j] = line[j];
-		j++;
-	}
+	fill_line(temp, line, &j, i);
 	if (line[j] == '\n')
 		temp[j++] = '\n';
 	temp[j] = '\0';
@@ -89,7 +94,7 @@ char	*form_line(int fd, char *line)
 
 char	*get_next_line(int fd)
 {
-	static char *line[1024];
+	static char	*line[1024];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);

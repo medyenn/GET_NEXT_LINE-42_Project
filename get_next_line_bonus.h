@@ -6,7 +6,7 @@
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 22:30:57 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/29 22:50:46 by mennih           ###   ########.fr       */
+/*   Updated: 2025/11/30 10:50:47 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 char	*extract_line(char **line_ptr);
 char	*form_line(int fd, char *line);
 char	*get_next_line(int fd);
+void	fill_line(char *temp, char *line, int *i, int j);
 char	*ft_free(char *buf1, char *buf2);
 int		length_of_line(char *line);
 int		check_line(char *buff);

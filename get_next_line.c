@@ -6,7 +6,7 @@
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 08:42:46 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/29 22:49:43 by mennih           ###   ########.fr       */
+/*   Updated: 2025/11/30 10:17:30 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,4 +100,3 @@ char	*get_next_line(int fd)
 		return (NULL);
 	return (extract_line(&line));
 }
-

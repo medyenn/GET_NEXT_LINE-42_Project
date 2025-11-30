@@ -6,7 +6,7 @@
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 19:09:53 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/29 22:49:25 by mennih           ###   ########.fr       */
+/*   Updated: 2025/11/30 10:01:45 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,5 @@ int		check_line(char *buff);
 char	*join_line(char *line, char *buffer);
 char	*update_line(char *line, int j);
 char	*duplicate_line(char *buff);
-
 
 #endif

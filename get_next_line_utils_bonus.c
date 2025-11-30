@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*    get_next_line_utils_bonus.c                       :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 22:31:57 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/29 22:32:20 by mennih           ###   ########.fr       */
+/*   Updated: 2025/11/30 10:53:17 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,11 +91,7 @@ char	*join_line(char *line, char *buffer)
 	if (!temp)
 		return (NULL);
 	i = 0;
-	while (line[i])
-	{
-		temp[i] = line[i];
-		i++;
-	}
+	fill_line(temp, line, &i, len1);
 	i = 0;
 	while (buffer[i])
 	{
