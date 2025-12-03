@@ -6,11 +6,11 @@
 /*   By: mennih <mennih@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/29 22:37:59 by mennih            #+#    #+#             */
-/*   Updated: 2025/11/30 22:20:47 by mennih           ###   ########.fr       */
+/*   Updated: 2025/12/03 14:07:13 by mennih           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 #include <fcntl.h>
 #include <stdio.h>
 
@@ -24,7 +24,7 @@ int	main(void)
 	{
 		printf("%s", s1);
 	 	free(s1);
-		//printf("%s", s2);
+		printf("%s", s2);
 		free(s2);
 		s2 = get_next_line(fd2);
 		s1 = get_next_line(fd1);
